@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Russo+One&display=swap');
+
+:root {
+    --azul: #1a1af7;
+    --verde: #5ee106;
+    --preto: #000000;
+    --branco: #ffffff;
+    --cinza: #c1c1c1;
+    --cinzaclaro: #eceaea;
+    --roxo: #771ba1;
+    --amarelo: #f8e80d;
+
+    --futebol: #003366;
+    --futebol1: #0040ff;
+    --fontefutebol: #ffffff;
+
+    --natacao: #28a745;
+    --natacao1: #008000;
+    --fontenacao: #ffffff;
+
+    --volei: #d2691e;
+    --volei1: #a0522d;
+    --fontevolei: #ffffff;
+
+    --basquete: #9370db;
+    --basquete1: #8b008b;
+    --fontebasquete: #ffffff;
+
+    --atletismo: #1e90ff;
+    --atletismo1: #0000ff;
+    --fonteatletismo: #ffffff;
+
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--roxo);
+    height: 8vh;
+}
+
+head {
+    box-shadow: 5px 5px 5px var(--preto);
+}
+
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde);
+    gap: 10px;
+    margin-left: 5px;
+}
+
+#logo i {
+    font-size: 40px;
+}
+
+#logo p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+
+#navegacao nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 5px;
+    gap: 10px;
+
+
+}
+
+.link-navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.link-navegacao a,
+.link-navegacao i {
+    transition: color o.3s ease, transform 0.3s ease;
+
+}
+
+.link-navegacao:hover a,
+.link-navegacao:hover i {
+    color: #ffcc00;
+
+}
+
+
+
+.link-navegacao i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.link-navegacao a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+
+
+#redessociais nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 20px;
+    gap: 7px;
+    padding: 10px;
+}
+
+.link-redessociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.link-redessociais a,
+.link-redessociais i {
+    transition: color o.3s ease, transform 0.3s ease;
+}
+
+.link-redessociais:hover a,
+.link-redessociais:hover i {
+    color: var(--verde);
+}
+
+
+.link-redessociais i {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.link-redessociais a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+#contato nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+
+.link-contato a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.link-contato p,
+.link-contato i {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-contato:hover p,
+.link-contato:hover i {
+    color: var(--verde);
+}
+
+
+.link-contato i {
+    color: #ffffff;
+    font-size: 25px;
+
+}
+
+
+.link-contato a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #ffffff;
+
+}
+
+
+#entrar {
+    margin-right: 20px;
+    background-color: var(--azul);
+}
+
+#entrar {
+    margin-right: 30px;
+}
+
+#botao-entrar {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    color: var(--azul);
+    border: #1a1af7;
+    font-weight: 600px;
+    background-color: var(--verde);
+    transition: all 0.3s ease;
+}
+
+#botao-entrar:hover {
+    background-color: var(--amarelo);
+
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: var(--cinzaclaro);
+}
+
+#apresentacao h1 {
+    align-items: center;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    text-shadow: 5px 5px 5px var(--cinza);
+    margin-bottom: 20px;
+}
+
+.apresentacao p {
+    font-family: 'Courier New';
+    font-size: 14px;
+    align-items: first baseline;
+}
+
+#conteudo {
+    display: flex;
+    flex: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 10px;
+
+}
+
+#imagem img {
+    width: 250px;
+    margin-left: 100px;
+    margin-top: -80px;
+    transition: all 0.3s ease;
+
+}
+
+#imagem img:hover {
+    scale: 1;
+
+    transform: translateX(5px);
+    filter: saturate(1);
+}
+
+#grupo-cards {
+    width: 100%;
+    height: 450px;
+}
+
+#texto p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza);
+    padding: 20px 30px 20px 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+
+
+.cards h2 {
+    font-family: 'Verdana';
+    color: var(--branco);
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px var(--cinza);
+}
+
+.grupo-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.card {
+    box-shadow: 5px 5px 5px var(--cinza);
+    width: 15%;
+    height: 400px;
+    background-color: var(--cinzaclaro);
+    transition: all 1s ease;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    padding: 0px;
+}
+
+.card img:hover {
+    filter: saturate(2);
+}
+
+.card-info {
+    margin: 0px 0px 0px 0px;
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--roxo);
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.card p {
+    height: 100px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    ;
+}
+
+.card-button button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cinza);
+    background-color: var(--roxo);
+    border: var(--roxo);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.card-button button:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+.modalidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 150px;
+    border-top: 4px solid var(--preto);
+}
+
+.modalidade-imagem {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.modalidade-imagem img{
+    height: 100%;
+    border-radius: 50px;
+    border: 3px solid var(--basquete1);
+    box-shadow: 5px 5px 5px var(--atletismo);
+}
+
+.modalidade-imagem img:hover {
+    filter: saturate(1.3);
+}
+
+.modalidade-texto {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 60%;
+}
+
+.modalidade-texto h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+.modalidade-texto p {
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    margin-left: 50px;
+    height: 150px;
+}
+
+.modalidade-texto ol {
+    margin-left: 70px;
+    height: 200px;
+}
+
+.modalidade-texto ol li {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.modalidade-texto ol li span {
+    font-weight: 700;
+    text-shadow: 2px 2px 2px var(--preto);
+}
+
+.modalidade-texto button {
+    margin: 40px 40px 60px;
+    width: 60%;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+
+#futebol {
+    background: linear-gradient(to right, var(--futebol), var(--futebol1));
+    color: var(--fontefutebol);
+    transform: all 2s ease;
+}
+
+#futebol-botao-teste {
+    background-color: var(--futebol);
+    color: var(--fontefutebol);
+    border: 2px solid var(--fontefutebol);
+    transition: all 1s ease;
+}
+
+#futebol-botao-teste:hover {
+    background-color: var(--fontefutebol);
+    color: var(--futebol);
+
+}
+
+#natacao {
+    background: linear-gradient(to right, var(--natacao), var(--natacao1));
+    color: var(--fontenatacao);
+    transform: all 2s ease;
+}
+
+#natacao-botao-teste {
+    background-color: var(--natacao);
+    color: var(--fontenatacao);
+    border: 2px solid var(--fontenatacao);
+    transition: all 1s ease;
+}
+
+#natacao-botao-teste:hover {
+    background-color: var(--fontenatacao);
+    color: var(--natacao);
+}
+
+#volei {
+    background: linear-gradient(to right, var(--volei), var(--volei1));
+    color: var(--fontevolei);
+    transform: all 2s ease;
+}
+
+#volei-botao-teste {
+    background-color: var(--volei);
+    color: var(--fontevolei);
+    border: 2px solid var(--fontevolei);
+    transition: all 1s ease;
+}
+
+#volei-botao-teste:hover {
+    background-color: var(--fontevolei);
+    color: var(--volei);
+}
+
+#basquete {
+    background: linear-gradient(to right, var(--basquete), var(--basquete1));
+    color: var(--fontebasquete);
+    transform: all 2s ease;
+}
+
+#basquete-botao-teste {
+    background-color: var(--basquete);
+    color: var(--fontebasquete);
+    border: 2px solid var(--fontebasquete);
+    transition: all 1s ease;
+}
+
+#basquete-botao-teste:hover {
+    background-color: var(--fontebasquete);
+    color: var(--basquete);
+}
+
+#atletismo {
+    background: linear-gradient(to right, var(--atletismo), var(--atletismo1));
+    color: var(--fonteatletismo);
+    transform: all 2s ease;
+}
+
+#atletismo-botao-teste {
+    background-color: var(--atletismo);
+    color: var(--fonteatletismo);
+    border: 2px solid var(--fonteatletismo);
+    transition: all 1s ease;
+}
+
+#atletismo-botao-teste:hover {
+    background-color: var(--fonteatletismo);
+    color: var(--atletismo);
+}
+
+footer {
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#desenvolvedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.legenda {
+    font-size: 18px;
+    color: var(--branco);
+    border-bottom: 1px solid var(--branco);
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--branco);
+    margin-bottom: 14px;
+}
+
+
+#redessociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#redessociais p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redessociais-link {
+    display: flex;
+    flex-direction: row;
+    color: var(--branco);
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.redessociais-link:hover {
+    font-weight: 700;
+    color: var(--verde);
+
+}
+
+.redessociais-link i {
+    font-size: 34px;
+
+}
+
+.texto-link {
+    font-size: 20px;
+
+}
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#contato p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-link {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.contato-link:hover {
+    font-weight: 700;
+    color: var(--verde)
+}
+
+.contato-link i {
+    font-size: 40px;
+}
+
+.texto-contato {
+    font-size: 20px;
+}
